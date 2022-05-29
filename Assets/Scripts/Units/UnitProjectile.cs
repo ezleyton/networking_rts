@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Mirror;
@@ -8,6 +9,7 @@ public class UnitProjectile : NetworkBehaviour
     [SerializeField] private Rigidbody rb;
     [SerializeField] private float launchForce = 10f;
     [SerializeField] private float destroyAfterSeconds = 5f;
+    [SerializeField] private int damageToDeal = 20;
     
     // Start is called before the first frame update
     void Start()
@@ -20,15 +22,25 @@ public class UnitProjectile : NetworkBehaviour
         Invoke(nameof(DestroySelf), destroyAfterSeconds);
     }
 
+    [ServerCallback]
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.TryGetComponent<NetworkIdentity>(out NetworkIdentity networkIdentity))
+        {
+            if (networkIdentity.connectionToClient == connectionToClient) return; //if its impacting the same client then ignore (own unit)
+
+            if (other.TryGetComponent<Health>(out Health health))
+            {
+                health.DealDamage(damageToDeal);
+            }
+            DestroySelf();
+        }
+    }
+
     [Server]
     private void DestroySelf()
     {
         NetworkServer.Destroy(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
