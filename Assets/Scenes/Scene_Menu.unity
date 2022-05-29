@@ -130,73 +130,59 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3108543558741912900, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2,
-        type: 3}
+    - target: {fileID: 3108543558741912900, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2, type: 3}
       propertyPath: onlineScene
       value: Assets/Scenes/Map_scene.unity
       objectReference: {fileID: 0}
-    - target: {fileID: 3108543558741912900, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2,
-        type: 3}
+    - target: {fileID: 3108543558741912900, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2, type: 3}
       propertyPath: offlineScene
       value: Assets/Scenes/Scene_Menu.unity
       objectReference: {fileID: 0}
-    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2,
-        type: 3}
+    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2,
-        type: 3}
+    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2,
-        type: 3}
+    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2,
-        type: 3}
+    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2,
-        type: 3}
+    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2,
-        type: 3}
+    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2,
-        type: 3}
+    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2,
-        type: 3}
+    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2,
-        type: 3}
+    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2,
-        type: 3}
+    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2,
-        type: 3}
+    - target: {fileID: 3108543558741912906, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3108543558741912910, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2,
-        type: 3}
+    - target: {fileID: 3108543558741912910, guid: 3cbc7b4b99fcc164ab98924ca03b7bb2, type: 3}
       propertyPath: m_Name
       value: NetworkManager
       objectReference: {fileID: 0}

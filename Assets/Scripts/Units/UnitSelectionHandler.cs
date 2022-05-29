@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Mirror;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -21,6 +23,17 @@ public class UnitSelectionHandler : MonoBehaviour
         _mainCamera = Camera.main;
         _player = NetworkClient.connection.identity.GetComponent<RTSPlayer>(); //the problem with this is that the player is not ready by the time this is called
         //for this there's a workaround in the update checking if the player is null
+        Unit.AuthorityOnUnitDespawned += AuthorityHandleUnitDespawned;
+    }
+
+    private void OnDestroy()
+    {
+        Unit.AuthorityOnUnitDespawned -= AuthorityHandleUnitDespawned;
+    }
+
+    private void AuthorityHandleUnitDespawned(Unit unit)
+    {
+        SelectedUnits.Remove(unit);
     }
 
     private void Update()
